@@ -1,0 +1,47 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>InSidePage</title>
+</head>
+<body>
+    <main class="container  w-/12 ">
+        <h1 class="text-5xl text-center mt-20">Bank in Self</span></h1>
+        <div class="grid grid-cols-3 gap-4 text-center mx-10 my-20 px-4">
+            <div class="bg-orange-400 rounded">
+                <h1 class="text-4xl p-2 text-white">Deposit </h1>
+                <h1 class="text-3xl p-8 bg-white m-10 rounded">$<span id="previousDepositNumber">00</span></h1>
+            </div>
+            <div class="bg-orange-400 rounded">
+                <h1 class="text-4xl p-2 text-white">withdraw</h1>
+                <h1 class="text-3xl p-8 bg-white m-10 rounded">$<span id="withdrawDepositNumber">00</span></h1>
+            </div>
+            <div class="bg-green-400 rounded">
+                <h1 class="text-4xl p-2 ">Balance</h1>
+                <h1 class="text-3xl p-8 ">$<span id="balanceTotal">1200</span></h1>
+            </div>
+        </div>
+        <div class="gap-4 mx-10 my-20 px-4 grid grid-cols-2 ">
+            <div class="bg-purple-300 rounded">
+                <h1 class="text-3xl p-2 ">Pleas diposit</h1>
+                <input id="depositInputField" type="number" name="" placeholder="$ Ammound" class="m-4 w-3/4  px-5 py-1" > <br/>
+                <button  id="depositButt" class="text-2xl text-white rounded p-2 bg-amber-600 m-5 hover:bg-sky-700" type="submit">Submit</button>
+            </div>
+            <div class="bg-purple-400 rounded">
+                <h1 class="text-3xl p-2 ">Withdraw</h1>
+                <input id="withdrawInputField" type="number" name="" placeholder="$ Ammound" class="m-4 w-3/4 px-5 py-1"> <br/>
+                <button class="text-2xl text-white rounded p-2 bg-amber-800 m-5 hover:bg-sky-900" type="submit" id="withdrawButt">Submit</button>
+            </div>
+        </div>
+    </main>
+    <script>
+        
+    </script>
+ <script src="jsAllFile/utilities.js"></script>
+ <script src="jsAllFile/deposit.js"></script>
+ <script src="jsAllFile/withdraw.js"></script>
+</body>
+</html>
